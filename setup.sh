@@ -8,3 +8,5 @@ sudo docker run -t -i -p 9119:9119 -e COUCHBASE_HOST=192.168.0.24 -e COUCHBASE_P
 
 sudo docker build -t couchbase_prometheus .
 sudo docker run -p 9090:9090 --restart=always --detach=true --name=prometheus couchbase_prometheus
+
+sudo docker run -d --name=grafana -p 3000:3000 grafana/grafana
