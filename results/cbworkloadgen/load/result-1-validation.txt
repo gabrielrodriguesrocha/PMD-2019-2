@@ -1,0 +1,31 @@
+2019-06-30 16:48:23,871: mt cbworkloadgen...
+2019-06-30 16:48:23,871: mt  source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10
+2019-06-30 16:48:23,871: mt  sink   : http://localhost:8091
+2019-06-30 16:48:23,871: mt  opts   : {'username': '<xxx>', 'destination_vbucket_state': 'active', 'verbose': 3, 'extra': {'max_retry': 10.0, 'rehash': 0.0, 'dcp_consumer_queue_length': 1000.0, 'data_only': 0.0, 'uncompress': 0.0, 'nmv_retry': 1.0, 'conflict_resolve': 1.0, 'cbb_max_mb': 100000.0, 'report': 5.0, 'mcd_compatible': 1.0, 'try_xwm': 1.0, 'backoff_cap': 0.1, 'batch_max_bytes': 400000.0, 'report_full': 2000.0, 'flow_control': 1.0, 'batch_max_size': 1000.0, 'seqno': 0.0, 'design_doc_only': 0.0, 'allow_recovery_vb_remap': 0.0, 'recv_min_bytes': 4096.0}, 'collection': None, 'ssl': False, 'threads': 1, 'key': None, 'password': '<xxx>', 'id': None, 'destination_operation': None, 'source_vbucket_state': 'active', 'silent': False, 'dry_run': False, 'single_node': False, 'bucket_destination': 'default', 'vbucket_list': None, 'separator': '::', 'bucket_source': None}
+2019-06-30 16:48:23,872: mt source_class: <class 'pump_gen.GenSource'>
+2019-06-30 16:48:23,872: mt sink_class: <class 'pump_cb.CBSink'>
+2019-06-30 16:48:23,878: mt Starting new HTTP connection (1): localhost
+2019-06-30 16:48:23,894: mt "GET /pools/default/buckets HTTP/1.1" 200 16649
+2019-06-30 16:48:23,906: mt source_bucket: default
+2019-06-30 16:48:23,906: mt sink_bucket: default
+2019-06-30 16:48:23,908: mt source_buckets: default
+2019-06-30 16:48:23,908: mt bucket: default
+2019-06-30 16:48:23,908: mt  source_nodes: N/A-0
+2019-06-30 16:48:23,912: mt  enqueueing node: N/A-0
+2019-06-30 16:48:23,912: w0  node: N/A-0
+2019-06-30 16:48:23,913: w0 sink_bucket: default
+2019-06-30 16:49:13,764: w0   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-0)->http://localhost:8091(default@N/A-0)) done.
+2019-06-30 16:49:13,767: w0   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-0)
+2019-06-30 16:49:13,767: w0   sink   : http://localhost:8091(default@N/A-0)
+2019-06-30 16:49:13,768: w0          :                total |       last |    per sec
+2019-06-30 16:49:13,768: w0    batch :                  500 |        500 |       10.0
+2019-06-30 16:49:13,768: w0    byte  :              5000000 |    5000000 |   100291.7
+2019-06-30 16:49:13,768: w0    msg   :               500000 |     500000 |    10029.2
+2019-06-30 16:49:13,769: w0  node: N/A-0, done; rv: 0
+  [####################] 100.0% (500000/estimated 500000 msgs)
+bucket: default, msgs transferred...
+       :                total |       last |    per sec
+ batch :                  500 |        500 |        9.8
+ byte  :              5000000 |    5000000 |    98294.0
+ msg   :               500000 |     500000 |     9829.4
+done
