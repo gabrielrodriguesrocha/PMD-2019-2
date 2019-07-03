@@ -1,0 +1,1131 @@
+2019-07-02 15:19:01,682: mt cbworkloadgen...
+2019-07-02 15:19:01,682: mt  source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10
+2019-07-02 15:19:01,683: mt  sink   : http://localhost:8091
+2019-07-02 15:19:01,683: mt  opts   : {'username': '<xxx>', 'destination_vbucket_state': 'active', 'verbose': 3, 'extra': {'max_retry': 10.0, 'rehash': 0.0, 'dcp_consumer_queue_length': 1000.0, 'data_only': 0.0, 'uncompress': 0.0, 'nmv_retry': 1.0, 'conflict_resolve': 1.0, 'cbb_max_mb': 100000.0, 'report': 5.0, 'mcd_compatible': 1.0, 'try_xwm': 1.0, 'backoff_cap': 0.1, 'batch_max_bytes': 400000.0, 'report_full': 2000.0, 'flow_control': 1.0, 'batch_max_size': 1000.0, 'seqno': 0.0, 'design_doc_only': 0.0, 'allow_recovery_vb_remap': 0.0, 'recv_min_bytes': 4096.0}, 'collection': None, 'ssl': False, 'threads': 10, 'key': None, 'password': '<xxx>', 'id': None, 'destination_operation': None, 'source_vbucket_state': 'active', 'silent': False, 'dry_run': False, 'single_node': False, 'bucket_destination': 'default', 'vbucket_list': None, 'separator': '::', 'bucket_source': None}
+2019-07-02 15:19:01,683: mt source_class: <class 'pump_gen.GenSource'>
+2019-07-02 15:19:01,684: mt sink_class: <class 'pump_cb.CBSink'>
+2019-07-02 15:19:01,689: mt Starting new HTTP connection (1): localhost
+2019-07-02 15:19:01,709: mt "GET /pools/default/buckets HTTP/1.1" 200 16743
+2019-07-02 15:19:01,715: mt source_bucket: default
+2019-07-02 15:19:01,715: mt sink_bucket: default
+2019-07-02 15:19:01,715: mt source_buckets: default
+2019-07-02 15:19:01,715: mt bucket: default
+2019-07-02 15:19:01,715: mt  source_nodes: N/A-0,N/A-1,N/A-2,N/A-3,N/A-4,N/A-5,N/A-6,N/A-7,N/A-8,N/A-9
+2019-07-02 15:19:01,718: mt  enqueueing node: N/A-0
+2019-07-02 15:19:01,718: mt  enqueueing node: N/A-1
+2019-07-02 15:19:01,718: w0  node: N/A-0
+2019-07-02 15:19:01,718: mt  enqueueing node: N/A-2
+2019-07-02 15:19:01,719: w1  node: N/A-1
+2019-07-02 15:19:01,719: w2  node: N/A-2
+2019-07-02 15:19:01,720: mt  enqueueing node: N/A-3
+2019-07-02 15:19:01,720: w0 sink_bucket: default
+2019-07-02 15:19:01,721: w2 sink_bucket: default
+2019-07-02 15:19:01,721: w1 sink_bucket: default
+2019-07-02 15:19:01,721: mt  enqueueing node: N/A-4
+2019-07-02 15:19:01,722: w3  node: N/A-3
+2019-07-02 15:19:01,723: mt  enqueueing node: N/A-5
+2019-07-02 15:19:01,725: w4  node: N/A-4
+2019-07-02 15:19:01,731: w5  node: N/A-5
+2019-07-02 15:19:01,732: w4 sink_bucket: default
+2019-07-02 15:19:01,725: mt  enqueueing node: N/A-6
+2019-07-02 15:19:01,738: w5 sink_bucket: default
+2019-07-02 15:19:01,746: w3 sink_bucket: default
+2019-07-02 15:19:01,752: mt  enqueueing node: N/A-7
+2019-07-02 15:19:01,753: w6  node: N/A-6
+2019-07-02 15:19:01,777: mt  enqueueing node: N/A-8
+2019-07-02 15:19:01,777: w7  node: N/A-7
+2019-07-02 15:19:01,823: w7 sink_bucket: default
+2019-07-02 15:19:01,834: mt  enqueueing node: N/A-9
+2019-07-02 15:19:01,834: w8  node: N/A-8
+2019-07-02 15:19:01,843: w9  node: N/A-9
+2019-07-02 15:19:01,870: w6 sink_bucket: default
+2019-07-02 15:19:01,878: w8 sink_bucket: default
+2019-07-02 15:19:01,883: w9 sink_bucket: default
+  [                    ] 0.6% (28000/estimated 5000000 msgs)[A
+  [                    ] 0.6% (29000/estimated 5000000 msgs)[A
+  [                    ] 0.6% (32000/estimated 5000000 msgs)[A
+  [                    ] 0.7% (34000/estimated 5000000 msgs)[A
+  [                    ] 0.7% (35000/estimated 5000000 msgs)[A
+  [                    ] 0.7% (36000/estimated 5000000 msgs)[A
+  [                    ] 0.8% (39000/estimated 5000000 msgs)[A
+  [                    ] 0.8% (39000/estimated 5000000 msgs)[A
+  [                    ] 0.8% (42000/estimated 5000000 msgs)[A
+  [                    ] 0.9% (45000/estimated 5000000 msgs)[A
+  [                    ] 1.5% (73000/estimated 5000000 msgs)[A
+  [                    ] 1.5% (77000/estimated 5000000 msgs)[A
+  [                    ] 1.6% (82000/estimated 5000000 msgs)[A
+  [                    ] 1.7% (83000/estimated 5000000 msgs)[A
+  [                    ] 1.7% (84000/estimated 5000000 msgs)[A
+  [                    ] 1.7% (85000/estimated 5000000 msgs)[A
+  [                    ] 1.8% (88000/estimated 5000000 msgs)[A
+  [                    ] 1.8% (92000/estimated 5000000 msgs)[A
+  [                    ] 1.9% (96000/estimated 5000000 msgs)[A
+  [                    ] 2.1% (103000/estimated 5000000 msgs)[A
+  [                    ] 2.4% (120000/estimated 5000000 msgs)[A
+  [#                   ] 2.5% (126000/estimated 5000000 msgs)[A
+  [#                   ] 2.6% (128000/estimated 5000000 msgs)[A
+  [#                   ] 2.6% (129000/estimated 5000000 msgs)[A
+  [#                   ] 2.6% (130000/estimated 5000000 msgs)[A
+  [#                   ] 2.8% (138000/estimated 5000000 msgs)[A
+  [#                   ] 2.8% (141000/estimated 5000000 msgs)[A
+  [#                   ] 2.9% (145000/estimated 5000000 msgs)[A
+  [#                   ] 3.0% (150000/estimated 5000000 msgs)[A
+  [#                   ] 3.1% (153000/estimated 5000000 msgs)[A
+  [#                   ] 3.4% (170000/estimated 5000000 msgs)[A
+  [#                   ] 3.5% (175000/estimated 5000000 msgs)[A
+  [#                   ] 3.6% (178000/estimated 5000000 msgs)[A
+  [#                   ] 3.6% (180000/estimated 5000000 msgs)[A
+  [#                   ] 3.7% (183000/estimated 5000000 msgs)[A
+  [#                   ] 3.7% (185000/estimated 5000000 msgs)[A
+  [#                   ] 3.8% (189000/estimated 5000000 msgs)[A
+  [#                   ] 3.8% (192000/estimated 5000000 msgs)[A
+  [#                   ] 4.0% (202000/estimated 5000000 msgs)[A
+  [#                   ] 4.3% (215000/estimated 5000000 msgs)[A
+  [#                   ] 4.4% (219000/estimated 5000000 msgs)[A
+  [#                   ] 4.5% (223000/estimated 5000000 msgs)[A
+  [#                   ] 4.5% (225000/estimated 5000000 msgs)[A
+  [#                   ] 4.6% (230000/estimated 5000000 msgs)[A
+  [#                   ] 4.7% (233000/estimated 5000000 msgs)[A
+  [#                   ] 4.7% (236000/estimated 5000000 msgs)[A
+  [#                   ] 4.7% (237000/estimated 5000000 msgs)[A
+  [#                   ] 4.9% (244000/estimated 5000000 msgs)[A
+  [#                   ] 5.1% (255000/estimated 5000000 msgs)[A
+  [#                   ] 5.2% (262000/estimated 5000000 msgs)[A
+  [#                   ] 5.3% (263000/estimated 5000000 msgs)[A
+  [#                   ] 5.5% (273000/estimated 5000000 msgs)[A
+  [#                   ] 5.5% (276000/estimated 5000000 msgs)[A
+  [#                   ] 5.5% (277000/estimated 5000000 msgs)[A
+  [#                   ] 5.6% (282000/estimated 5000000 msgs)[A
+  [#                   ] 5.7% (284000/estimated 5000000 msgs)[A
+  [#                   ] 5.8% (288000/estimated 5000000 msgs)[A
+  [#                   ] 6.0% (300000/estimated 5000000 msgs)[A
+  [#                   ] 6.1% (306000/estimated 5000000 msgs)[A
+  [#                   ] 6.2% (311000/estimated 5000000 msgs)[A
+  [#                   ] 6.2% (312000/estimated 5000000 msgs)[A
+  [#                   ] 6.4% (321000/estimated 5000000 msgs)[A
+  [#                   ] 6.4% (322000/estimated 5000000 msgs)[A
+  [#                   ] 6.5% (326000/estimated 5000000 msgs)[A
+  [#                   ] 6.6% (328000/estimated 5000000 msgs)[A
+  [#                   ] 6.7% (333000/estimated 5000000 msgs)[A
+  [#                   ] 6.7% (334000/estimated 5000000 msgs)[A
+  [#                   ] 7.1% (355000/estimated 5000000 msgs)[A
+  [#                   ] 7.1% (357000/estimated 5000000 msgs)[A
+  [#                   ] 7.2% (359000/estimated 5000000 msgs)[A
+  [#                   ] 7.4% (371000/estimated 5000000 msgs)[A
+  [#                   ] 7.5% (373000/estimated 5000000 msgs)[A
+  [#                   ] 7.5% (373000/estimated 5000000 msgs)[A
+  [##                  ] 7.5% (375000/estimated 5000000 msgs)[A
+  [##                  ] 7.5% (376000/estimated 5000000 msgs)[A
+  [##                  ] 7.6% (378000/estimated 5000000 msgs)[A
+  [##                  ] 7.9% (393000/estimated 5000000 msgs)[A
+  [##                  ] 8.1% (406000/estimated 5000000 msgs)[A
+  [##                  ] 8.2% (409000/estimated 5000000 msgs)[A
+  [##                  ] 8.2% (409000/estimated 5000000 msgs)[A
+  [##                  ] 8.3% (417000/estimated 5000000 msgs)[A
+  [##                  ] 8.4% (418000/estimated 5000000 msgs)[A
+  [##                  ] 8.4% (422000/estimated 5000000 msgs)[A
+  [##                  ] 8.6% (430000/estimated 5000000 msgs)[A
+  [##                  ] 8.6% (431000/estimated 5000000 msgs)[A
+  [##                  ] 8.7% (434000/estimated 5000000 msgs)[A
+  [##                  ] 8.9% (443000/estimated 5000000 msgs)[A
+  [##                  ] 9.1% (453000/estimated 5000000 msgs)[A
+  [##                  ] 9.2% (461000/estimated 5000000 msgs)[A
+  [##                  ] 9.2% (462000/estimated 5000000 msgs)[A
+  [##                  ] 9.3% (463000/estimated 5000000 msgs)[A
+  [##                  ] 9.3% (464000/estimated 5000000 msgs)[A
+  [##                  ] 9.4% (469000/estimated 5000000 msgs)[A
+  [##                  ] 9.5% (474000/estimated 5000000 msgs)[A
+  [##                  ] 9.6% (482000/estimated 5000000 msgs)[A
+  [##                  ] 9.7% (483000/estimated 5000000 msgs)[A
+  [##                  ] 9.9% (493000/estimated 5000000 msgs)[A
+  [##                  ] 9.9% (497000/estimated 5000000 msgs)[A
+  [##                  ] 10.1% (507000/estimated 5000000 msgs)[A
+  [##                  ] 10.3% (514000/estimated 5000000 msgs)[A
+  [##                  ] 10.3% (515000/estimated 5000000 msgs)[A
+  [##                  ] 10.4% (519000/estimated 5000000 msgs)[A
+  [##                  ] 10.4% (522000/estimated 5000000 msgs)[A
+  [##                  ] 10.5% (523000/estimated 5000000 msgs)[A
+  [##                  ] 10.5% (526000/estimated 5000000 msgs)[A
+  [##                  ] 10.6% (530000/estimated 5000000 msgs)[A
+  [##                  ] 11.0% (548000/estimated 5000000 msgs)[A
+  [##                  ] 11.1% (554000/estimated 5000000 msgs)[A
+  [##                  ] 11.2% (558000/estimated 5000000 msgs)[A
+  [##                  ] 11.2% (559000/estimated 5000000 msgs)[A
+  [##                  ] 11.4% (570000/estimated 5000000 msgs)[A
+  [##                  ] 11.4% (571000/estimated 5000000 msgs)[A
+  [##                  ] 11.4% (572000/estimated 5000000 msgs)[A
+  [##                  ] 11.5% (574000/estimated 5000000 msgs)[A
+  [##                  ] 11.5% (576000/estimated 5000000 msgs)[A
+  [##                  ] 11.6% (578000/estimated 5000000 msgs)[A
+  [##                  ] 11.9% (597000/estimated 5000000 msgs)[A
+  [##                  ] 12.1% (606000/estimated 5000000 msgs)[A
+  [##                  ] 12.2% (610000/estimated 5000000 msgs)[A
+  [##                  ] 12.2% (611000/estimated 5000000 msgs)[A
+  [##                  ] 12.2% (612000/estimated 5000000 msgs)[A
+  [##                  ] 12.4% (619000/estimated 5000000 msgs)[A
+  [##                  ] 12.4% (622000/estimated 5000000 msgs)[A
+  [###                 ] 12.5% (626000/estimated 5000000 msgs)[A
+  [###                 ] 12.5% (627000/estimated 5000000 msgs)[A
+  [###                 ] 12.6% (628000/estimated 5000000 msgs)[A
+  [###                 ] 12.8% (638000/estimated 5000000 msgs)[A
+  [###                 ] 13.1% (653000/estimated 5000000 msgs)[A
+  [###                 ] 13.1% (654000/estimated 5000000 msgs)[A
+  [###                 ] 13.1% (656000/estimated 5000000 msgs)[A
+  [###                 ] 13.3% (664000/estimated 5000000 msgs)[A
+  [###                 ] 13.3% (667000/estimated 5000000 msgs)[A
+  [###                 ] 13.4% (670000/estimated 5000000 msgs)[A
+  [###                 ] 13.4% (672000/estimated 5000000 msgs)[A
+  [###                 ] 13.8% (689000/estimated 5000000 msgs)[A
+  [###                 ] 13.8% (692000/estimated 5000000 msgs)[A
+  [###                 ] 13.9% (697000/estimated 5000000 msgs)[A
+  [###                 ] 14.0% (699000/estimated 5000000 msgs)[A
+  [###                 ] 14.0% (702000/estimated 5000000 msgs)[A
+  [###                 ] 14.1% (705000/estimated 5000000 msgs)[A
+  [###                 ] 14.2% (708000/estimated 5000000 msgs)[A
+  [###                 ] 14.3% (716000/estimated 5000000 msgs)[A
+  [###                 ] 14.5% (724000/estimated 5000000 msgs)[A
+  [###                 ] 14.5% (725000/estimated 5000000 msgs)[A
+  [###                 ] 14.8% (738000/estimated 5000000 msgs)[A
+  [###                 ] 14.8% (741000/estimated 5000000 msgs)[A
+  [###                 ] 14.9% (744000/estimated 5000000 msgs)[A
+  [###                 ] 15.0% (752000/estimated 5000000 msgs)[A
+  [###                 ] 15.1% (754000/estimated 5000000 msgs)[A
+  [###                 ] 15.1% (755000/estimated 5000000 msgs)[A
+  [###                 ] 15.3% (763000/estimated 5000000 msgs)[A
+  [###                 ] 15.3% (766000/estimated 5000000 msgs)[A
+  [###                 ] 15.4% (769000/estimated 5000000 msgs)[A
+  [###                 ] 15.6% (778000/estimated 5000000 msgs)[A
+  [###                 ] 15.7% (783000/estimated 5000000 msgs)[A
+  [###                 ] 15.8% (788000/estimated 5000000 msgs)[A
+  [###                 ] 15.8% (791000/estimated 5000000 msgs)[A
+  [###                 ] 15.9% (797000/estimated 5000000 msgs)[A
+  [###                 ] 16.0% (799000/estimated 5000000 msgs)[A
+  [###                 ] 16.2% (811000/estimated 5000000 msgs)[A
+  [###                 ] 16.2% (812000/estimated 5000000 msgs)[A
+  [###                 ] 16.3% (817000/estimated 5000000 msgs)[A
+  [###                 ] 16.5% (825000/estimated 5000000 msgs)[A
+  [###                 ] 16.6% (831000/estimated 5000000 msgs)[A
+  [###                 ] 16.6% (832000/estimated 5000000 msgs)[A
+  [###                 ] 16.7% (834000/estimated 5000000 msgs)[A
+  [###                 ] 16.8% (839000/estimated 5000000 msgs)[A
+  [###                 ] 16.9% (846000/estimated 5000000 msgs)[A
+  [###                 ] 17.0% (849000/estimated 5000000 msgs)[A
+  [###                 ] 17.3% (864000/estimated 5000000 msgs)[A
+  [###                 ] 17.3% (865000/estimated 5000000 msgs)[A
+  [####                ] 17.5% (875000/estimated 5000000 msgs)[A
+  [####                ] 17.6% (881000/estimated 5000000 msgs)[A
+  [####                ] 17.6% (882000/estimated 5000000 msgs)[A
+  [####                ] 17.7% (885000/estimated 5000000 msgs)[A
+  [####                ] 17.7% (886000/estimated 5000000 msgs)[A
+  [####                ] 17.7% (887000/estimated 5000000 msgs)[A
+  [####                ] 17.8% (888000/estimated 5000000 msgs)[A
+  [####                ] 18.0% (900000/estimated 5000000 msgs)[A
+  [####                ] 18.1% (906000/estimated 5000000 msgs)[A
+  [####                ] 18.3% (913000/estimated 5000000 msgs)[A
+  [####                ] 18.6% (928000/estimated 5000000 msgs)[A
+  [####                ] 18.6% (931000/estimated 5000000 msgs)[A
+  [####                ] 18.6% (932000/estimated 5000000 msgs)[A
+  [####                ] 18.7% (934000/estimated 5000000 msgs)[A
+  [####                ] 18.8% (938000/estimated 5000000 msgs)[A
+  [####                ] 18.8% (939000/estimated 5000000 msgs)[A
+  [####                ] 18.9% (943000/estimated 5000000 msgs)[A
+  [####                ] 18.9% (944000/estimated 5000000 msgs)[A
+  [####                ] 19.1% (955000/estimated 5000000 msgs)[A
+  [####                ] 19.3% (963000/estimated 5000000 msgs)[A
+  [####                ] 19.3% (967000/estimated 5000000 msgs)[A
+  [####                ] 19.6% (980000/estimated 5000000 msgs)[A
+  [####                ] 19.7% (983000/estimated 5000000 msgs)[A
+  [####                ] 19.8% (988000/estimated 5000000 msgs)[A
+  [####                ] 19.8% (990000/estimated 5000000 msgs)[A
+  [####                ] 19.9% (993000/estimated 5000000 msgs)[A
+  [####                ] 19.9% (996000/estimated 5000000 msgs)[A
+  [####                ] 20.0% (1001000/estimated 5000000 msgs)[A
+  [####                ] 20.1% (1004000/estimated 5000000 msgs)[A
+  [####                ] 20.2% (1011000/estimated 5000000 msgs)[A
+  [####                ] 20.4% (1020000/estimated 5000000 msgs)[A
+  [####                ] 20.6% (1028000/estimated 5000000 msgs)[A
+  [####                ] 20.6% (1030000/estimated 5000000 msgs)[A
+  [####                ] 20.6% (1031000/estimated 5000000 msgs)[A
+  [####                ] 20.7% (1036000/estimated 5000000 msgs)[A
+  [####                ] 20.8% (1039000/estimated 5000000 msgs)[A
+  [####                ] 20.8% (1040000/estimated 5000000 msgs)[A
+  [####                ] 20.9% (1047000/estimated 5000000 msgs)[A
+  [####                ] 21.1% (1055000/estimated 5000000 msgs)[A
+  [####                ] 21.1% (1057000/estimated 5000000 msgs)[A
+  [####                ] 21.5% (1076000/estimated 5000000 msgs)[A
+  [####                ] 21.6% (1078000/estimated 5000000 msgs)[A
+  [####                ] 21.6% (1082000/estimated 5000000 msgs)[A
+  [####                ] 21.7% (1087000/estimated 5000000 msgs)[A
+  [####                ] 21.8% (1088000/estimated 5000000 msgs)[A
+  [####                ] 21.9% (1094000/estimated 5000000 msgs)[A
+  [####                ] 21.9% (1097000/estimated 5000000 msgs)[A
+  [####                ] 22.0% (1098000/estimated 5000000 msgs)[A
+  [####                ] 22.0% (1101000/estimated 5000000 msgs)[A
+  [####                ] 22.1% (1105000/estimated 5000000 msgs)[A
+  [####                ] 22.5% (1124000/estimated 5000000 msgs)[A
+  [#####               ] 22.6% (1128000/estimated 5000000 msgs)[A
+  [#####               ] 22.6% (1129000/estimated 5000000 msgs)[A
+  [#####               ] 22.8% (1140000/estimated 5000000 msgs)[A
+  [#####               ] 22.8% (1142000/estimated 5000000 msgs)[A
+  [#####               ] 22.9% (1144000/estimated 5000000 msgs)[A
+  [#####               ] 22.9% (1145000/estimated 5000000 msgs)[A
+  [#####               ] 23.0% (1148000/estimated 5000000 msgs)[A
+  [#####               ] 23.1% (1154000/estimated 5000000 msgs)[A
+  [#####               ] 23.1% (1155000/estimated 5000000 msgs)[A
+  [#####               ] 23.6% (1180000/estimated 5000000 msgs)[A
+  [#####               ] 23.6% (1182000/estimated 5000000 msgs)[A
+  [#####               ] 23.7% (1183000/estimated 5000000 msgs)[A
+  [#####               ] 23.8% (1188000/estimated 5000000 msgs)[A
+  [#####               ] 23.8% (1189000/estimated 5000000 msgs)[A
+  [#####               ] 23.8% (1191000/estimated 5000000 msgs)[A
+  [#####               ] 23.9% (1194000/estimated 5000000 msgs)[A
+  [#####               ] 23.9% (1196000/estimated 5000000 msgs)[A
+  [#####               ] 24.2% (1211000/estimated 5000000 msgs)[A
+  [#####               ] 24.3% (1215000/estimated 5000000 msgs)[A
+  [#####               ] 24.4% (1221000/estimated 5000000 msgs)[A
+  [#####               ] 24.4% (1222000/estimated 5000000 msgs)[A
+  [#####               ] 24.5% (1226000/estimated 5000000 msgs)[A
+  [#####               ] 24.7% (1233000/estimated 5000000 msgs)[A
+  [#####               ] 24.8% (1239000/estimated 5000000 msgs)[A
+  [#####               ] 24.8% (1241000/estimated 5000000 msgs)[A
+  [#####               ] 24.9% (1245000/estimated 5000000 msgs)[A
+  [#####               ] 25.0% (1248000/estimated 5000000 msgs)[A
+  [#####               ] 25.3% (1266000/estimated 5000000 msgs)[A
+  [#####               ] 25.3% (1267000/estimated 5000000 msgs)[A
+  [#####               ] 25.4% (1270000/estimated 5000000 msgs)[A
+  [#####               ] 25.4% (1271000/estimated 5000000 msgs)[A
+  [#####               ] 25.4% (1272000/estimated 5000000 msgs)[A
+  [#####               ] 25.5% (1275000/estimated 5000000 msgs)[A
+  [#####               ] 25.8% (1289000/estimated 5000000 msgs)[A
+  [#####               ] 25.9% (1294000/estimated 5000000 msgs)[A
+  [#####               ] 26.0% (1300000/estimated 5000000 msgs)[A
+  [#####               ] 26.1% (1305000/estimated 5000000 msgs)[A
+  [#####               ] 26.3% (1315000/estimated 5000000 msgs)[A
+  [#####               ] 26.3% (1317000/estimated 5000000 msgs)[A
+  [#####               ] 26.4% (1318000/estimated 5000000 msgs)[A
+  [#####               ] 26.4% (1319000/estimated 5000000 msgs)[A
+  [#####               ] 26.4% (1320000/estimated 5000000 msgs)[A
+  [#####               ] 26.4% (1321000/estimated 5000000 msgs)[A
+  [#####               ] 26.8% (1342000/estimated 5000000 msgs)[A
+  [#####               ] 27.0% (1348000/estimated 5000000 msgs)[A
+  [#####               ] 27.0% (1352000/estimated 5000000 msgs)[A
+  [#####               ] 27.1% (1357000/estimated 5000000 msgs)[A
+  [#####               ] 27.2% (1358000/estimated 5000000 msgs)[A
+  [#####               ] 27.3% (1364000/estimated 5000000 msgs)[A
+  [#####               ] 27.4% (1369000/estimated 5000000 msgs)[A
+  [#####               ] 27.4% (1371000/estimated 5000000 msgs)[A
+  [#####               ] 27.4% (1372000/estimated 5000000 msgs)[A
+  [#####               ] 27.5% (1374000/estimated 5000000 msgs)[A
+  [######              ] 27.9% (1396000/estimated 5000000 msgs)[A
+  [######              ] 28.0% (1398000/estimated 5000000 msgs)[A
+  [######              ] 28.0% (1399000/estimated 5000000 msgs)[A
+  [######              ] 28.1% (1404000/estimated 5000000 msgs)[A
+  [######              ] 28.2% (1412000/estimated 5000000 msgs)[A
+  [######              ] 28.3% (1415000/estimated 5000000 msgs)[A
+  [######              ] 28.3% (1416000/estimated 5000000 msgs)[A
+  [######              ] 28.4% (1419000/estimated 5000000 msgs)[A
+  [######              ] 28.4% (1420000/estimated 5000000 msgs)[A
+  [######              ] 28.5% (1423000/estimated 5000000 msgs)[A
+  [######              ] 29.0% (1448000/estimated 5000000 msgs)[A
+  [######              ] 29.0% (1450000/estimated 5000000 msgs)[A
+  [######              ] 29.1% (1453000/estimated 5000000 msgs)[A
+  [######              ] 29.1% (1454000/estimated 5000000 msgs)[A
+  [######              ] 29.1% (1457000/estimated 5000000 msgs)[A
+  [######              ] 29.2% (1459000/estimated 5000000 msgs)[A
+  [######              ] 29.2% (1461000/estimated 5000000 msgs)[A
+  [######              ] 29.4% (1471000/estimated 5000000 msgs)[A
+  [######              ] 29.6% (1478000/estimated 5000000 msgs)[A
+  [######              ] 29.6% (1480000/estimated 5000000 msgs)[A
+  [######              ] 29.8% (1491000/estimated 5000000 msgs)[A
+  [######              ] 29.9% (1493000/estimated 5000000 msgs)[A
+  [######              ] 30.0% (1500000/estimated 5000000 msgs)[A
+  [######              ] 30.1% (1504000/estimated 5000000 msgs)[A
+  [######              ] 30.1% (1506000/estimated 5000000 msgs)[A
+  [######              ] 30.2% (1508000/estimated 5000000 msgs)[A
+  [######              ] 30.2% (1512000/estimated 5000000 msgs)[A
+  [######              ] 30.3% (1517000/estimated 5000000 msgs)[A
+  [######              ] 30.7% (1533000/estimated 5000000 msgs)[A
+  [######              ] 30.7% (1536000/estimated 5000000 msgs)[A
+  [######              ] 30.8% (1539000/estimated 5000000 msgs)[A
+  [######              ] 30.8% (1540000/estimated 5000000 msgs)[A
+  [######              ] 31.0% (1552000/estimated 5000000 msgs)[A
+  [######              ] 31.1% (1555000/estimated 5000000 msgs)[A
+  [######              ] 31.1% (1556000/estimated 5000000 msgs)[A
+  [######              ] 31.2% (1561000/estimated 5000000 msgs)[A
+  [######              ] 31.2% (1562000/estimated 5000000 msgs)[A
+  [######              ] 31.4% (1570000/estimated 5000000 msgs)[A
+  [######              ] 31.6% (1580000/estimated 5000000 msgs)[A
+  [######              ] 31.6% (1581000/estimated 5000000 msgs)[A
+  [######              ] 31.7% (1586000/estimated 5000000 msgs)[A
+  [######              ] 31.9% (1594000/estimated 5000000 msgs)[A
+  [######              ] 32.0% (1599000/estimated 5000000 msgs)[A
+  [######              ] 32.0% (1600000/estimated 5000000 msgs)[A
+  [######              ] 32.2% (1610000/estimated 5000000 msgs)[A
+  [######              ] 32.2% (1611000/estimated 5000000 msgs)[A
+  [######              ] 32.3% (1614000/estimated 5000000 msgs)[A
+  [######              ] 32.4% (1618000/estimated 5000000 msgs)[A
+  [#######             ] 32.7% (1633000/estimated 5000000 msgs)[A
+  [#######             ] 32.7% (1635000/estimated 5000000 msgs)[A
+  [#######             ] 32.7% (1636000/estimated 5000000 msgs)[A
+  [#######             ] 33.0% (1648000/estimated 5000000 msgs)[A
+  [#######             ] 33.1% (1653000/estimated 5000000 msgs)[A
+  [#######             ] 33.1% (1654000/estimated 5000000 msgs)[A
+  [#######             ] 33.1% (1657000/estimated 5000000 msgs)[A
+  [#######             ] 33.2% (1658000/estimated 5000000 msgs)[A
+  [#######             ] 33.2% (1660000/estimated 5000000 msgs)[A
+  [#######             ] 33.5% (1675000/estimated 5000000 msgs)[A
+  [#######             ] 33.6% (1682000/estimated 5000000 msgs)[A
+  [#######             ] 33.8% (1688000/estimated 5000000 msgs)[A
+  [#######             ] 33.8% (1689000/estimated 5000000 msgs)[A
+  [#######             ] 33.8% (1691000/estimated 5000000 msgs)[A
+  [#######             ] 34.0% (1699000/estimated 5000000 msgs)[A
+  [#######             ] 34.0% (1701000/estimated 5000000 msgs)[A
+  [#######             ] 34.0% (1701000/estimated 5000000 msgs)[A
+  [#######             ] 34.1% (1704000/estimated 5000000 msgs)[A
+  [#######             ] 34.3% (1713000/estimated 5000000 msgs)[A
+  [#######             ] 34.5% (1726000/estimated 5000000 msgs)[A
+  [#######             ] 34.7% (1735000/estimated 5000000 msgs)[A
+  [#######             ] 34.8% (1738000/estimated 5000000 msgs)[A
+  [#######             ] 34.8% (1742000/estimated 5000000 msgs)[A
+  [#######             ] 34.9% (1744000/estimated 5000000 msgs)[A
+  [#######             ] 34.9% (1747000/estimated 5000000 msgs)[A
+  [#######             ] 35.0% (1748000/estimated 5000000 msgs)[A
+  [#######             ] 35.1% (1753000/estimated 5000000 msgs)[A
+  [#######             ] 35.1% (1755000/estimated 5000000 msgs)[A
+  [#######             ] 35.3% (1767000/estimated 5000000 msgs)[A
+  [#######             ] 35.5% (1776000/estimated 5000000 msgs)[A
+  [#######             ] 35.6% (1782000/estimated 5000000 msgs)[A
+  [#######             ] 35.7% (1784000/estimated 5000000 msgs)[A
+  [#######             ] 35.8% (1790000/estimated 5000000 msgs)[A
+  [#######             ] 35.9% (1794000/estimated 5000000 msgs)[A
+  [#######             ] 36.0% (1800000/estimated 5000000 msgs)[A
+  [#######             ] 36.0% (1801000/estimated 5000000 msgs)[A
+  [#######             ] 36.1% (1803000/estimated 5000000 msgs)[A
+  [#######             ] 36.1% (1805000/estimated 5000000 msgs)[A
+  [#######             ] 36.5% (1823000/estimated 5000000 msgs)[A
+  [#######             ] 36.5% (1827000/estimated 5000000 msgs)[A
+  [#######             ] 36.6% (1830000/estimated 5000000 msgs)[A
+  [#######             ] 36.7% (1834000/estimated 5000000 msgs)[A
+  [#######             ] 36.7% (1836000/estimated 5000000 msgs)[A
+  [#######             ] 36.8% (1842000/estimated 5000000 msgs)[A
+  [#######             ] 36.9% (1846000/estimated 5000000 msgs)[A
+  [#######             ] 36.9% (1847000/estimated 5000000 msgs)[A
+  [#######             ] 37.2% (1859000/estimated 5000000 msgs)[A
+  [#######             ] 37.3% (1864000/estimated 5000000 msgs)[A
+  [#######             ] 37.5% (1873000/estimated 5000000 msgs)[A
+  [########            ] 37.5% (1875000/estimated 5000000 msgs)[A
+  [########            ] 37.6% (1881000/estimated 5000000 msgs)[A
+  [########            ] 37.6% (1882000/estimated 5000000 msgs)[A
+  [########            ] 37.7% (1885000/estimated 5000000 msgs)[A
+  [########            ] 37.9% (1893000/estimated 5000000 msgs)[A
+  [########            ] 37.9% (1894000/estimated 5000000 msgs)[A
+  [########            ] 37.9% (1895000/estimated 5000000 msgs)[A
+  [########            ] 38.1% (1907000/estimated 5000000 msgs)[A
+  [########            ] 38.2% (1911000/estimated 5000000 msgs)[A
+  [########            ] 38.4% (1922000/estimated 5000000 msgs)[A
+  [########            ] 38.5% (1923000/estimated 5000000 msgs)[A
+  [########            ] 38.7% (1934000/estimated 5000000 msgs)[A
+  [########            ] 38.7% (1935000/estimated 5000000 msgs)[A
+  [########            ] 38.7% (1936000/estimated 5000000 msgs)[A
+  [########            ] 38.8% (1938000/estimated 5000000 msgs)[A
+  [########            ] 38.9% (1943000/estimated 5000000 msgs)[A
+  [########            ] 39.1% (1953000/estimated 5000000 msgs)[A
+  [########            ] 39.1% (1957000/estimated 5000000 msgs)[A
+  [########            ] 39.3% (1966000/estimated 5000000 msgs)[A
+  [########            ] 39.4% (1968000/estimated 5000000 msgs)[A
+  [########            ] 39.5% (1975000/estimated 5000000 msgs)[A
+  [########            ] 39.6% (1979000/estimated 5000000 msgs)[A
+  [########            ] 39.6% (1982000/estimated 5000000 msgs)[A
+  [########            ] 39.7% (1987000/estimated 5000000 msgs)[A
+  [########            ] 39.8% (1991000/estimated 5000000 msgs)[A
+  [########            ] 39.9% (1994000/estimated 5000000 msgs)[A
+  [########            ] 40.1% (2003000/estimated 5000000 msgs)[A
+  [########            ] 40.2% (2011000/estimated 5000000 msgs)[A
+  [########            ] 40.3% (2017000/estimated 5000000 msgs)[A
+  [########            ] 40.4% (2020000/estimated 5000000 msgs)[A
+  [########            ] 40.5% (2024000/estimated 5000000 msgs)[A
+  [########            ] 40.6% (2030000/estimated 5000000 msgs)[A
+  [########            ] 40.6% (2032000/estimated 5000000 msgs)[A
+  [########            ] 40.7% (2036000/estimated 5000000 msgs)[A
+  [########            ] 40.7% (2037000/estimated 5000000 msgs)[A
+  [########            ] 40.8% (2039000/estimated 5000000 msgs)[A
+  [########            ] 41.0% (2052000/estimated 5000000 msgs)[A
+  [########            ] 41.1% (2055000/estimated 5000000 msgs)[A
+  [########            ] 41.4% (2069000/estimated 5000000 msgs)[A
+  [########            ] 41.5% (2077000/estimated 5000000 msgs)[A
+  [########            ] 41.6% (2078000/estimated 5000000 msgs)[A
+  [########            ] 41.6% (2079000/estimated 5000000 msgs)[A
+  [########            ] 41.7% (2083000/estimated 5000000 msgs)[A
+  [########            ] 41.7% (2084000/estimated 5000000 msgs)[A
+  [########            ] 41.7% (2085000/estimated 5000000 msgs)[A
+  [########            ] 41.7% (2087000/estimated 5000000 msgs)[A
+  [########            ] 42.1% (2103000/estimated 5000000 msgs)[A
+  [########            ] 42.4% (2118000/estimated 5000000 msgs)[A
+  [########            ] 42.4% (2120000/estimated 5000000 msgs)[A
+  [########            ] 42.4% (2121000/estimated 5000000 msgs)[A
+  [#########           ] 42.5% (2126000/estimated 5000000 msgs)[A
+  [#########           ] 42.5% (2127000/estimated 5000000 msgs)[A
+  [#########           ] 42.6% (2131000/estimated 5000000 msgs)[A
+  [#########           ] 42.7% (2133000/estimated 5000000 msgs)[A
+  [#########           ] 42.8% (2139000/estimated 5000000 msgs)[A
+  [#########           ] 42.9% (2143000/estimated 5000000 msgs)[A
+  [#########           ] 43.0% (2149000/estimated 5000000 msgs)[A
+  [#########           ] 43.2% (2160000/estimated 5000000 msgs)[A
+  [#########           ] 43.3% (2167000/estimated 5000000 msgs)[A
+  [#########           ] 43.4% (2170000/estimated 5000000 msgs)[A
+  [#########           ] 43.5% (2173000/estimated 5000000 msgs)[A
+  [#########           ] 43.5% (2175000/estimated 5000000 msgs)[A
+  [#########           ] 43.7% (2183000/estimated 5000000 msgs)[A
+  [#########           ] 43.7% (2187000/estimated 5000000 msgs)[A
+  [#########           ] 43.8% (2192000/estimated 5000000 msgs)[A
+  [#########           ] 43.9% (2197000/estimated 5000000 msgs)[A
+  [#########           ] 44.0% (2201000/estimated 5000000 msgs)[A
+  [#########           ] 44.2% (2210000/estimated 5000000 msgs)[A
+  [#########           ] 44.3% (2213000/estimated 5000000 msgs)[A
+  [#########           ] 44.3% (2216000/estimated 5000000 msgs)[A
+  [#########           ] 44.4% (2222000/estimated 5000000 msgs)[A
+  [#########           ] 44.5% (2223000/estimated 5000000 msgs)[A
+  [#########           ] 44.8% (2238000/estimated 5000000 msgs)[A
+  [#########           ] 44.8% (2239000/estimated 5000000 msgs)[A
+  [#########           ] 44.8% (2240000/estimated 5000000 msgs)[A
+  [#########           ] 44.9% (2243000/estimated 5000000 msgs)[A
+  [#########           ] 45.0% (2250000/estimated 5000000 msgs)[A
+  [#########           ] 45.0% (2251000/estimated 5000000 msgs)[A
+  [#########           ] 45.3% (2265000/estimated 5000000 msgs)[A
+  [#########           ] 45.4% (2271000/estimated 5000000 msgs)[A
+  [#########           ] 45.5% (2273000/estimated 5000000 msgs)[A
+  [#########           ] 45.6% (2278000/estimated 5000000 msgs)[A
+  [#########           ] 45.7% (2285000/estimated 5000000 msgs)[A
+  [#########           ] 45.8% (2291000/estimated 5000000 msgs)[A
+  [#########           ] 45.8% (2292000/estimated 5000000 msgs)[A
+  [#########           ] 45.9% (2296000/estimated 5000000 msgs)[A
+  [#########           ] 46.0% (2298000/estimated 5000000 msgs)[A
+  [#########           ] 46.0% (2300000/estimated 5000000 msgs)[A
+  [#########           ] 46.2% (2309000/estimated 5000000 msgs)[A
+  [#########           ] 46.5% (2326000/estimated 5000000 msgs)[A
+  [#########           ] 46.5% (2327000/estimated 5000000 msgs)[A
+  [#########           ] 46.6% (2329000/estimated 5000000 msgs)[A
+  [#########           ] 46.6% (2331000/estimated 5000000 msgs)[A
+  [#########           ] 46.8% (2340000/estimated 5000000 msgs)[A
+  [#########           ] 46.9% (2343000/estimated 5000000 msgs)[A
+  [#########           ] 46.9% (2344000/estimated 5000000 msgs)[A
+  [#########           ] 46.9% (2345000/estimated 5000000 msgs)[A
+  [#########           ] 47.0% (2352000/estimated 5000000 msgs)[A
+  [#########           ] 47.2% (2358000/estimated 5000000 msgs)[A
+  [#########           ] 47.5% (2373000/estimated 5000000 msgs)[A
+  [#########           ] 47.5% (2374000/estimated 5000000 msgs)[A
+  [##########          ] 47.6% (2380000/estimated 5000000 msgs)[A
+  [##########          ] 47.6% (2381000/estimated 5000000 msgs)[A
+  [##########          ] 47.8% (2389000/estimated 5000000 msgs)[A
+  [##########          ] 47.8% (2392000/estimated 5000000 msgs)[A
+  [##########          ] 47.9% (2396000/estimated 5000000 msgs)[A
+  [##########          ] 48.0% (2401000/estimated 5000000 msgs)[A
+  [##########          ] 48.1% (2405000/estimated 5000000 msgs)[A
+  [##########          ] 48.2% (2412000/estimated 5000000 msgs)[A
+  [##########          ] 48.4% (2418000/estimated 5000000 msgs)[A
+  [##########          ] 48.5% (2426000/estimated 5000000 msgs)[A
+  [##########          ] 48.5% (2427000/estimated 5000000 msgs)[A
+  [##########          ] 48.6% (2430000/estimated 5000000 msgs)[A
+  [##########          ] 48.6% (2431000/estimated 5000000 msgs)[A
+  [##########          ] 48.7% (2435000/estimated 5000000 msgs)[A
+  [##########          ] 49.1% (2453000/estimated 5000000 msgs)[A
+  [##########          ] 49.1% (2457000/estimated 5000000 msgs)[A
+  [##########          ] 49.2% (2458000/estimated 5000000 msgs)[A
+  [##########          ] 49.2% (2459000/estimated 5000000 msgs)[A
+  [##########          ] 49.3% (2467000/estimated 5000000 msgs)[A
+  [##########          ] 49.5% (2475000/estimated 5000000 msgs)[A
+  [##########          ] 49.6% (2482000/estimated 5000000 msgs)[A
+  [##########          ] 49.7% (2483000/estimated 5000000 msgs)[A
+  [##########          ] 49.7% (2484000/estimated 5000000 msgs)[A
+  [##########          ] 49.7% (2486000/estimated 5000000 msgs)[A
+  [##########          ] 50.0% (2501000/estimated 5000000 msgs)[A
+  [##########          ] 50.1% (2503000/estimated 5000000 msgs)[A
+  [##########          ] 50.2% (2509000/estimated 5000000 msgs)[A
+  [##########          ] 50.2% (2510000/estimated 5000000 msgs)[A
+  [##########          ] 50.3% (2513000/estimated 5000000 msgs)[A
+  [##########          ] 50.5% (2523000/estimated 5000000 msgs)[A
+  [##########          ] 50.5% (2527000/estimated 5000000 msgs)[A
+  [##########          ] 50.6% (2529000/estimated 5000000 msgs)[A
+  [##########          ] 50.7% (2533000/estimated 5000000 msgs)[A
+  [##########          ] 50.8% (2541000/estimated 5000000 msgs)[A
+  [##########          ] 51.0% (2551000/estimated 5000000 msgs)[A
+  [##########          ] 51.0% (2552000/estimated 5000000 msgs)[A
+  [##########          ] 51.1% (2556000/estimated 5000000 msgs)[A
+  [##########          ] 51.3% (2564000/estimated 5000000 msgs)[A
+  [##########          ] 51.3% (2565000/estimated 5000000 msgs)[A
+  [##########          ] 51.5% (2574000/estimated 5000000 msgs)[A
+  [##########          ] 51.6% (2578000/estimated 5000000 msgs)[A
+  [##########          ] 51.6% (2582000/estimated 5000000 msgs)[A
+  [##########          ] 51.7% (2583000/estimated 5000000 msgs)[A
+  [##########          ] 51.8% (2588000/estimated 5000000 msgs)[A
+  [##########          ] 51.9% (2593000/estimated 5000000 msgs)[A
+  [##########          ] 52.0% (2599000/estimated 5000000 msgs)[A
+  [##########          ] 52.2% (2608000/estimated 5000000 msgs)[A
+  [##########          ] 52.3% (2617000/estimated 5000000 msgs)[A
+  [##########          ] 52.4% (2620000/estimated 5000000 msgs)[A
+  [##########          ] 52.5% (2623000/estimated 5000000 msgs)[A
+  [###########         ] 52.5% (2626000/estimated 5000000 msgs)[A
+  [###########         ] 52.6% (2632000/estimated 5000000 msgs)[A
+  [###########         ] 52.7% (2635000/estimated 5000000 msgs)[A
+  [###########         ] 52.7% (2637000/estimated 5000000 msgs)[A
+  [###########         ] 52.9% (2643000/estimated 5000000 msgs)[A
+  [###########         ] 53.0% (2649000/estimated 5000000 msgs)[A
+  [###########         ] 53.2% (2661000/estimated 5000000 msgs)[A
+  [###########         ] 53.4% (2671000/estimated 5000000 msgs)[A
+  [###########         ] 53.4% (2672000/estimated 5000000 msgs)[A
+  [###########         ] 53.5% (2673000/estimated 5000000 msgs)[A
+  [###########         ] 53.6% (2679000/estimated 5000000 msgs)[A
+  [###########         ] 53.7% (2684000/estimated 5000000 msgs)[A
+  [###########         ] 53.8% (2690000/estimated 5000000 msgs)[A
+  [###########         ] 53.8% (2692000/estimated 5000000 msgs)[A
+  [###########         ] 53.9% (2697000/estimated 5000000 msgs)[A
+  [###########         ] 54.0% (2698000/estimated 5000000 msgs)[A
+  [###########         ] 54.2% (2711000/estimated 5000000 msgs)[A
+  [###########         ] 54.2% (2712000/estimated 5000000 msgs)[A
+  [###########         ] 54.3% (2713000/estimated 5000000 msgs)[A
+  [###########         ] 54.3% (2715000/estimated 5000000 msgs)[A
+  [###########         ] 54.6% (2729000/estimated 5000000 msgs)[A
+  [###########         ] 54.8% (2738000/estimated 5000000 msgs)[A
+  [###########         ] 54.8% (2739000/estimated 5000000 msgs)[A
+  [###########         ] 54.9% (2745000/estimated 5000000 msgs)[A
+  [###########         ] 54.9% (2747000/estimated 5000000 msgs)[A
+  [###########         ] 55.0% (2752000/estimated 5000000 msgs)[A
+  [###########         ] 55.1% (2755000/estimated 5000000 msgs)[A
+  [###########         ] 55.1% (2757000/estimated 5000000 msgs)[A
+  [###########         ] 55.3% (2764000/estimated 5000000 msgs)[A
+  [###########         ] 55.5% (2776000/estimated 5000000 msgs)[A
+  [###########         ] 55.5% (2777000/estimated 5000000 msgs)[A
+  [###########         ] 55.6% (2781000/estimated 5000000 msgs)[A
+  [###########         ] 55.7% (2785000/estimated 5000000 msgs)[A
+  [###########         ] 55.9% (2793000/estimated 5000000 msgs)[A
+  [###########         ] 55.9% (2794000/estimated 5000000 msgs)[A
+  [###########         ] 55.9% (2796000/estimated 5000000 msgs)[A
+  [###########         ] 56.1% (2804000/estimated 5000000 msgs)[A
+  [###########         ] 56.4% (2822000/estimated 5000000 msgs)[A
+  [###########         ] 56.5% (2823000/estimated 5000000 msgs)[A
+  [###########         ] 56.5% (2824000/estimated 5000000 msgs)[A
+  [###########         ] 56.6% (2828000/estimated 5000000 msgs)[A
+  [###########         ] 56.6% (2831000/estimated 5000000 msgs)[A
+  [###########         ] 56.6% (2832000/estimated 5000000 msgs)[A
+  [###########         ] 56.7% (2834000/estimated 5000000 msgs)[A
+  [###########         ] 56.7% (2836000/estimated 5000000 msgs)[A
+  [###########         ] 56.9% (2845000/estimated 5000000 msgs)[A
+  [###########         ] 56.9% (2847000/estimated 5000000 msgs)[A
+  [###########         ] 57.5% (2874000/estimated 5000000 msgs)[A
+  [############        ] 57.5% (2875000/estimated 5000000 msgs)[A
+  [############        ] 57.6% (2878000/estimated 5000000 msgs)[A
+  [############        ] 57.6% (2879000/estimated 5000000 msgs)[A
+  [############        ] 57.6% (2880000/estimated 5000000 msgs)[A
+  [############        ] 57.7% (2884000/estimated 5000000 msgs)[A
+  [############        ] 57.7% (2887000/estimated 5000000 msgs)[A
+  [############        ] 57.8% (2889000/estimated 5000000 msgs)[A
+  [############        ] 57.9% (2896000/estimated 5000000 msgs)[A
+  [############        ] 58.2% (2909000/estimated 5000000 msgs)[A
+  [############        ] 58.4% (2920000/estimated 5000000 msgs)[A
+  [############        ] 58.4% (2921000/estimated 5000000 msgs)[A
+  [############        ] 58.5% (2927000/estimated 5000000 msgs)[A
+  [############        ] 58.6% (2931000/estimated 5000000 msgs)[A
+  [############        ] 58.6% (2932000/estimated 5000000 msgs)[A
+  [############        ] 58.7% (2935000/estimated 5000000 msgs)[A
+  [############        ] 58.7% (2937000/estimated 5000000 msgs)[A
+  [############        ] 58.8% (2940000/estimated 5000000 msgs)[A
+  [############        ] 58.9% (2943000/estimated 5000000 msgs)[A
+  [############        ] 59.2% (2959000/estimated 5000000 msgs)[A
+  [############        ] 59.3% (2966000/estimated 5000000 msgs)[A
+  [############        ] 59.5% (2973000/estimated 5000000 msgs)[A
+  [############        ] 59.6% (2978000/estimated 5000000 msgs)[A
+  [############        ] 59.6% (2980000/estimated 5000000 msgs)[A
+  [############        ] 59.6% (2982000/estimated 5000000 msgs)[A
+  [############        ] 59.7% (2983000/estimated 5000000 msgs)[A
+  [############        ] 59.7% (2984000/estimated 5000000 msgs)[A
+  [############        ] 59.9% (2993000/estimated 5000000 msgs)[A
+  [############        ] 60.0% (2998000/estimated 5000000 msgs)[A
+  [############        ] 60.2% (3012000/estimated 5000000 msgs)[A
+  [############        ] 60.3% (3013000/estimated 5000000 msgs)[A
+  [############        ] 60.3% (3015000/estimated 5000000 msgs)[A
+  [############        ] 60.5% (3023000/estimated 5000000 msgs)[A
+  [############        ] 60.6% (3030000/estimated 5000000 msgs)[A
+  [############        ] 60.6% (3032000/estimated 5000000 msgs)[A
+  [############        ] 60.7% (3034000/estimated 5000000 msgs)[A
+  [############        ] 60.9% (3045000/estimated 5000000 msgs)[A
+  [############        ] 60.9% (3046000/estimated 5000000 msgs)[A
+  [############        ] 60.9% (3047000/estimated 5000000 msgs)[A
+  [############        ] 61.0% (3048000/estimated 5000000 msgs)[A
+  [############        ] 61.1% (3057000/estimated 5000000 msgs)[A
+  [############        ] 61.3% (3066000/estimated 5000000 msgs)[A
+  [############        ] 61.7% (3083000/estimated 5000000 msgs)[A
+  [############        ] 61.7% (3084000/estimated 5000000 msgs)[A
+  [############        ] 61.7% (3086000/estimated 5000000 msgs)[A
+  [############        ] 61.8% (3088000/estimated 5000000 msgs)[A
+  [############        ] 61.8% (3089000/estimated 5000000 msgs)[A
+  [############        ] 61.8% (3092000/estimated 5000000 msgs)[A
+  [############        ] 62.0% (3098000/estimated 5000000 msgs)[A
+  [############        ] 62.0% (3101000/estimated 5000000 msgs)[A
+  [############        ] 62.1% (3105000/estimated 5000000 msgs)[A
+  [############        ] 62.2% (3111000/estimated 5000000 msgs)[A
+  [#############       ] 62.6% (3131000/estimated 5000000 msgs)[A
+  [#############       ] 62.7% (3133000/estimated 5000000 msgs)[A
+  [#############       ] 62.7% (3136000/estimated 5000000 msgs)[A
+  [#############       ] 62.8% (3139000/estimated 5000000 msgs)[A
+  [#############       ] 62.9% (3143000/estimated 5000000 msgs)[A
+  [#############       ] 62.9% (3146000/estimated 5000000 msgs)[A
+  [#############       ] 63.0% (3148000/estimated 5000000 msgs)[A
+  [#############       ] 63.1% (3157000/estimated 5000000 msgs)[A
+  [#############       ] 63.2% (3159000/estimated 5000000 msgs)[A
+  [#############       ] 63.3% (3167000/estimated 5000000 msgs)[A
+  [#############       ] 63.5% (3176000/estimated 5000000 msgs)[A
+  [#############       ] 63.6% (3178000/estimated 5000000 msgs)[A
+  [#############       ] 63.6% (3182000/estimated 5000000 msgs)[A
+  [#############       ] 63.7% (3186000/estimated 5000000 msgs)[A
+  [#############       ] 63.7% (3187000/estimated 5000000 msgs)[A
+  [#############       ] 63.9% (3196000/estimated 5000000 msgs)[A
+  [#############       ] 64.1% (3205000/estimated 5000000 msgs)[A
+  [#############       ] 64.1% (3206000/estimated 5000000 msgs)[A
+  [#############       ] 64.4% (3218000/estimated 5000000 msgs)[A
+  [#############       ] 64.4% (3219000/estimated 5000000 msgs)[A
+  [#############       ] 64.4% (3220000/estimated 5000000 msgs)[A
+  [#############       ] 64.6% (3228000/estimated 5000000 msgs)[A
+  [#############       ] 64.6% (3230000/estimated 5000000 msgs)[A
+  [#############       ] 64.7% (3234000/estimated 5000000 msgs)[A
+  [#############       ] 64.7% (3235000/estimated 5000000 msgs)[A
+  [#############       ] 64.9% (3244000/estimated 5000000 msgs)[A
+  [#############       ] 65.2% (3259000/estimated 5000000 msgs)[A
+  [#############       ] 65.2% (3261000/estimated 5000000 msgs)[A
+  [#############       ] 65.4% (3268000/estimated 5000000 msgs)[A
+  [#############       ] 65.4% (3272000/estimated 5000000 msgs)[A
+  [#############       ] 65.5% (3273000/estimated 5000000 msgs)[A
+  [#############       ] 65.6% (3278000/estimated 5000000 msgs)[A
+  [#############       ] 65.6% (3279000/estimated 5000000 msgs)[A
+  [#############       ] 65.6% (3282000/estimated 5000000 msgs)[A
+  [#############       ] 65.7% (3284000/estimated 5000000 msgs)[A
+  [#############       ] 65.7% (3286000/estimated 5000000 msgs)[A
+  [#############       ] 66.1% (3305000/estimated 5000000 msgs)[A
+  [#############       ] 66.1% (3307000/estimated 5000000 msgs)[A
+  [#############       ] 66.3% (3314000/estimated 5000000 msgs)[A
+  [#############       ] 66.4% (3318000/estimated 5000000 msgs)[A
+  [#############       ] 66.5% (3326000/estimated 5000000 msgs)[A
+  [#############       ] 66.6% (3331000/estimated 5000000 msgs)[A
+  [#############       ] 66.7% (3333000/estimated 5000000 msgs)[A
+  [#############       ] 66.7% (3334000/estimated 5000000 msgs)[A
+  [#############       ] 66.8% (3339000/estimated 5000000 msgs)[A
+  [#############       ] 66.9% (3344000/estimated 5000000 msgs)[A
+  [#############       ] 67.1% (3356000/estimated 5000000 msgs)[A
+  [#############       ] 67.1% (3357000/estimated 5000000 msgs)[A
+  [#############       ] 67.2% (3358000/estimated 5000000 msgs)[A
+  [#############       ] 67.5% (3374000/estimated 5000000 msgs)[A
+  [##############      ] 67.5% (3377000/estimated 5000000 msgs)[A
+  [##############      ] 67.6% (3380000/estimated 5000000 msgs)[A
+  [##############      ] 67.6% (3382000/estimated 5000000 msgs)[A
+  [##############      ] 67.7% (3384000/estimated 5000000 msgs)[A
+  [##############      ] 67.7% (3387000/estimated 5000000 msgs)[A
+  [##############      ] 67.9% (3393000/estimated 5000000 msgs)[A
+  [##############      ] 68.1% (3406000/estimated 5000000 msgs)[A
+  [##############      ] 68.2% (3408000/estimated 5000000 msgs)[A
+  [##############      ] 68.2% (3410000/estimated 5000000 msgs)[A
+  [##############      ] 68.4% (3421000/estimated 5000000 msgs)[A
+  [##############      ] 68.5% (3425000/estimated 5000000 msgs)[A
+  [##############      ] 68.6% (3429000/estimated 5000000 msgs)[A
+  [##############      ] 68.6% (3432000/estimated 5000000 msgs)[A
+  [##############      ] 68.7% (3433000/estimated 5000000 msgs)[A
+  [##############      ] 68.8% (3439000/estimated 5000000 msgs)[A
+  [##############      ] 69.0% (3449000/estimated 5000000 msgs)[A
+  [##############      ] 69.0% (3451000/estimated 5000000 msgs)[A
+  [##############      ] 69.2% (3458000/estimated 5000000 msgs)[A
+  [##############      ] 69.2% (3461000/estimated 5000000 msgs)[A
+  [##############      ] 69.4% (3469000/estimated 5000000 msgs)[A
+  [##############      ] 69.5% (3475000/estimated 5000000 msgs)[A
+  [##############      ] 69.5% (3476000/estimated 5000000 msgs)[A
+  [##############      ] 69.6% (3480000/estimated 5000000 msgs)[A
+  [##############      ] 69.6% (3482000/estimated 5000000 msgs)[A
+  [##############      ] 69.9% (3496000/estimated 5000000 msgs)[A
+  [##############      ] 70.0% (3502000/estimated 5000000 msgs)[A
+  [##############      ] 70.1% (3505000/estimated 5000000 msgs)[A
+  [##############      ] 70.2% (3510000/estimated 5000000 msgs)[A
+  [##############      ] 70.3% (3513000/estimated 5000000 msgs)[A
+  [##############      ] 70.3% (3516000/estimated 5000000 msgs)[A
+  [##############      ] 70.5% (3527000/estimated 5000000 msgs)[A
+  [##############      ] 70.6% (3529000/estimated 5000000 msgs)[A
+  [##############      ] 70.6% (3530000/estimated 5000000 msgs)[A
+  [##############      ] 70.6% (3532000/estimated 5000000 msgs)[A
+  [##############      ] 70.7% (3536000/estimated 5000000 msgs)[A
+  [##############      ] 71.0% (3551000/estimated 5000000 msgs)[A
+  [##############      ] 71.1% (3555000/estimated 5000000 msgs)[A
+  [##############      ] 71.2% (3562000/estimated 5000000 msgs)[A
+  [##############      ] 71.3% (3564000/estimated 5000000 msgs)[A
+  [##############      ] 71.4% (3570000/estimated 5000000 msgs)[A
+  [##############      ] 71.4% (3572000/estimated 5000000 msgs)[A
+  [##############      ] 71.5% (3574000/estimated 5000000 msgs)[A
+  [##############      ] 71.5% (3577000/estimated 5000000 msgs)[A
+  [##############      ] 71.6% (3579000/estimated 5000000 msgs)[A
+  [##############      ] 71.8% (3588000/estimated 5000000 msgs)[A
+  [##############      ] 72.1% (3604000/estimated 5000000 msgs)[A
+  [##############      ] 72.2% (3609000/estimated 5000000 msgs)[A
+  [##############      ] 72.2% (3611000/estimated 5000000 msgs)[A
+  [##############      ] 72.3% (3614000/estimated 5000000 msgs)[A
+  [##############      ] 72.3% (3617000/estimated 5000000 msgs)[A
+  [##############      ] 72.4% (3618000/estimated 5000000 msgs)[A
+  [##############      ] 72.4% (3621000/estimated 5000000 msgs)[A
+  [###############     ] 72.6% (3631000/estimated 5000000 msgs)[A
+  [###############     ] 72.8% (3641000/estimated 5000000 msgs)[A
+  [###############     ] 72.8% (3642000/estimated 5000000 msgs)[A
+  [###############     ] 73.1% (3654000/estimated 5000000 msgs)[A
+  [###############     ] 73.1% (3656000/estimated 5000000 msgs)[A
+  [###############     ] 73.2% (3658000/estimated 5000000 msgs)[A
+  [###############     ] 73.2% (3659000/estimated 5000000 msgs)[A
+  [###############     ] 73.3% (3663000/estimated 5000000 msgs)[A
+  [###############     ] 73.4% (3669000/estimated 5000000 msgs)[A
+  [###############     ] 73.5% (3675000/estimated 5000000 msgs)[A
+  [###############     ] 73.5% (3677000/estimated 5000000 msgs)[A
+  [###############     ] 73.8% (3690000/estimated 5000000 msgs)[A
+  [###############     ] 74.0% (3699000/estimated 5000000 msgs)[A
+  [###############     ] 74.0% (3702000/estimated 5000000 msgs)[A
+  [###############     ] 74.1% (3704000/estimated 5000000 msgs)[A
+  [###############     ] 74.1% (3705000/estimated 5000000 msgs)[A
+  [###############     ] 74.1% (3707000/estimated 5000000 msgs)[A
+  [###############     ] 74.3% (3713000/estimated 5000000 msgs)[A
+  [###############     ] 74.4% (3718000/estimated 5000000 msgs)[A
+  [###############     ] 74.4% (3721000/estimated 5000000 msgs)[A
+  [###############     ] 74.7% (3734000/estimated 5000000 msgs)[A
+  [###############     ] 74.7% (3736000/estimated 5000000 msgs)[A
+  [###############     ] 74.7% (3737000/estimated 5000000 msgs)[A
+  [###############     ] 75.1% (3753000/estimated 5000000 msgs)[A
+  [###############     ] 75.1% (3756000/estimated 5000000 msgs)[A
+  [###############     ] 75.2% (3762000/estimated 5000000 msgs)[A
+  [###############     ] 75.3% (3764000/estimated 5000000 msgs)[A
+  [###############     ] 75.4% (3768000/estimated 5000000 msgs)[A
+  [###############     ] 75.4% (3769000/estimated 5000000 msgs)[A
+  [###############     ] 75.5% (3776000/estimated 5000000 msgs)[A
+  [###############     ] 75.6% (3781000/estimated 5000000 msgs)[A
+  [###############     ] 75.7% (3785000/estimated 5000000 msgs)[A
+  [###############     ] 75.7% (3787000/estimated 5000000 msgs)[A
+  [###############     ] 76.0% (3799000/estimated 5000000 msgs)[A
+  [###############     ] 76.2% (3810000/estimated 5000000 msgs)[A
+  [###############     ] 76.2% (3811000/estimated 5000000 msgs)[A
+  [###############     ] 76.3% (3817000/estimated 5000000 msgs)[A
+  [###############     ] 76.4% (3819000/estimated 5000000 msgs)[A
+  [###############     ] 76.4% (3820000/estimated 5000000 msgs)[A
+  [###############     ] 76.5% (3825000/estimated 5000000 msgs)[A
+  [###############     ] 76.6% (3828000/estimated 5000000 msgs)[A
+  [###############     ] 76.6% (3831000/estimated 5000000 msgs)[A
+  [###############     ] 76.7% (3834000/estimated 5000000 msgs)[A
+  [###############     ] 76.8% (3842000/estimated 5000000 msgs)[A
+  [###############     ] 77.2% (3859000/estimated 5000000 msgs)[A
+  [###############     ] 77.3% (3865000/estimated 5000000 msgs)[A
+  [###############     ] 77.3% (3867000/estimated 5000000 msgs)[A
+  [###############     ] 77.4% (3870000/estimated 5000000 msgs)[A
+  [###############     ] 77.5% (3873000/estimated 5000000 msgs)[A
+  [###############     ] 77.5% (3874000/estimated 5000000 msgs)[A
+  [################    ] 77.6% (3880000/estimated 5000000 msgs)[A
+  [################    ] 77.7% (3884000/estimated 5000000 msgs)[A
+  [################    ] 77.7% (3884000/estimated 5000000 msgs)[A
+  [################    ] 77.8% (3890000/estimated 5000000 msgs)[A
+  [################    ] 78.1% (3905000/estimated 5000000 msgs)[A
+  [################    ] 78.2% (3911000/estimated 5000000 msgs)[A
+  [################    ] 78.3% (3915000/estimated 5000000 msgs)[A
+  [################    ] 78.4% (3921000/estimated 5000000 msgs)[A
+  [################    ] 78.6% (3928000/estimated 5000000 msgs)[A
+  [################    ] 78.6% (3931000/estimated 5000000 msgs)[A
+  [################    ] 78.7% (3933000/estimated 5000000 msgs)[A
+  [################    ] 78.7% (3936000/estimated 5000000 msgs)[A
+  [################    ] 78.7% (3937000/estimated 5000000 msgs)[A
+  [################    ] 78.8% (3938000/estimated 5000000 msgs)[A
+  [################    ] 79.0% (3948000/estimated 5000000 msgs)[A
+  [################    ] 79.1% (3957000/estimated 5000000 msgs)[A
+  [################    ] 79.3% (3967000/estimated 5000000 msgs)[A
+  [################    ] 79.5% (3973000/estimated 5000000 msgs)[A
+  [################    ] 79.6% (3979000/estimated 5000000 msgs)[A
+  [################    ] 79.6% (3982000/estimated 5000000 msgs)[A
+  [################    ] 79.7% (3985000/estimated 5000000 msgs)[A
+  [################    ] 79.7% (3987000/estimated 5000000 msgs)[A
+  [################    ] 79.8% (3988000/estimated 5000000 msgs)[A
+  [################    ] 79.8% (3991000/estimated 5000000 msgs)[A
+  [################    ] 79.8% (3992000/estimated 5000000 msgs)[A
+  [################    ] 80.0% (3999000/estimated 5000000 msgs)[A
+  [################    ] 80.2% (4011000/estimated 5000000 msgs)[A
+  [################    ] 80.5% (4023000/estimated 5000000 msgs)[A
+  [################    ] 80.6% (4031000/estimated 5000000 msgs)[A
+  [################    ] 80.8% (4038000/estimated 5000000 msgs)[A
+  [################    ] 80.8% (4039000/estimated 5000000 msgs)[A
+  [################    ] 80.8% (4041000/estimated 5000000 msgs)[A
+  [################    ] 80.8% (4042000/estimated 5000000 msgs)[A
+  [################    ] 80.9% (4043000/estimated 5000000 msgs)[A
+  [################    ] 80.9% (4044000/estimated 5000000 msgs)[A
+  [################    ] 80.9% (4045000/estimated 5000000 msgs)[A
+  [################    ] 81.0% (4052000/estimated 5000000 msgs)[A
+  [################    ] 81.3% (4067000/estimated 5000000 msgs)[A
+  [################    ] 81.4% (4068000/estimated 5000000 msgs)[A
+  [################    ] 81.6% (4080000/estimated 5000000 msgs)[A
+  [################    ] 81.7% (4085000/estimated 5000000 msgs)[A
+  [################    ] 81.9% (4096000/estimated 5000000 msgs)[A
+  [################    ] 81.9% (4097000/estimated 5000000 msgs)[A
+  [################    ] 82.0% (4098000/estimated 5000000 msgs)[A
+  [################    ] 82.0% (4099000/estimated 5000000 msgs)[A
+  [################    ] 82.1% (4107000/estimated 5000000 msgs)[A
+  [################    ] 82.2% (4109000/estimated 5000000 msgs)[A
+  [################    ] 82.2% (4110000/estimated 5000000 msgs)[A
+  [################    ] 82.4% (4119000/estimated 5000000 msgs)[A
+  [#################   ] 82.6% (4129000/estimated 5000000 msgs)[A
+  [#################   ] 82.6% (4130000/estimated 5000000 msgs)[A
+  [#################   ] 82.7% (4133000/estimated 5000000 msgs)[A
+  [#################   ] 82.7% (4134000/estimated 5000000 msgs)[A
+  [#################   ] 82.9% (4143000/estimated 5000000 msgs)[A
+  [#################   ] 83.0% (4151000/estimated 5000000 msgs)[A
+  [#################   ] 83.3% (4167000/estimated 5000000 msgs)[A
+  [#################   ] 83.4% (4168000/estimated 5000000 msgs)[A
+  [#################   ] 83.4% (4171000/estimated 5000000 msgs)[A
+  [#################   ] 83.4% (4172000/estimated 5000000 msgs)[A
+  [#################   ] 83.5% (4173000/estimated 5000000 msgs)[A
+  [#################   ] 83.6% (4178000/estimated 5000000 msgs)[A
+  [#################   ] 83.6% (4182000/estimated 5000000 msgs)[A
+  [#################   ] 83.7% (4183000/estimated 5000000 msgs)[A
+  [#################   ] 83.8% (4192000/estimated 5000000 msgs)[A
+  [#################   ] 84.0% (4202000/estimated 5000000 msgs)[A
+  [#################   ] 84.4% (4218000/estimated 5000000 msgs)[A
+  [#################   ] 84.4% (4219000/estimated 5000000 msgs)[A
+  [#################   ] 84.4% (4220000/estimated 5000000 msgs)[A
+  [#################   ] 84.4% (4221000/estimated 5000000 msgs)[A
+  [#################   ] 84.4% (4222000/estimated 5000000 msgs)[A
+  [#################   ] 84.5% (4223000/estimated 5000000 msgs)[A
+  [#################   ] 84.7% (4233000/estimated 5000000 msgs)[A
+  [#################   ] 84.8% (4240000/estimated 5000000 msgs)[A
+  [#################   ] 84.9% (4245000/estimated 5000000 msgs)[A
+  [#################   ] 85.2% (4260000/estimated 5000000 msgs)[A
+  [#################   ] 85.2% (4262000/estimated 5000000 msgs)[A
+  [#################   ] 85.3% (4264000/estimated 5000000 msgs)[A
+  [#################   ] 85.3% (4265000/estimated 5000000 msgs)[A
+  [#################   ] 85.3% (4266000/estimated 5000000 msgs)[A
+  [#################   ] 85.6% (4281000/estimated 5000000 msgs)[A
+  [#################   ] 85.6% (4282000/estimated 5000000 msgs)[A
+  [#################   ] 85.7% (4283000/estimated 5000000 msgs)[A
+  [#################   ] 85.7% (4287000/estimated 5000000 msgs)[A
+  [#################   ] 85.9% (4297000/estimated 5000000 msgs)[A
+  [#################   ] 86.2% (4308000/estimated 5000000 msgs)[A
+  [#################   ] 86.2% (4311000/estimated 5000000 msgs)[A
+  [#################   ] 86.3% (4314000/estimated 5000000 msgs)[A
+  [#################   ] 86.3% (4315000/estimated 5000000 msgs)[A
+  [#################   ] 86.3% (4317000/estimated 5000000 msgs)[A
+  [#################   ] 86.5% (4325000/estimated 5000000 msgs)[A
+  [#################   ] 86.6% (4330000/estimated 5000000 msgs)[A
+  [#################   ] 86.6% (4331000/estimated 5000000 msgs)[A
+  [#################   ] 86.8% (4342000/estimated 5000000 msgs)[A
+  [#################   ] 87.1% (4353000/estimated 5000000 msgs)[A
+  [#################   ] 87.1% (4353000/estimated 5000000 msgs)[A
+  [#################   ] 87.2% (4361000/estimated 5000000 msgs)[A
+  [#################   ] 87.2% (4362000/estimated 5000000 msgs)[A
+  [#################   ] 87.3% (4367000/estimated 5000000 msgs)[A
+  [#################   ] 87.4% (4368000/estimated 5000000 msgs)[A
+  [##################  ] 87.5% (4377000/estimated 5000000 msgs)[A
+  [##################  ] 87.6% (4379000/estimated 5000000 msgs)[A
+  [##################  ] 87.7% (4386000/estimated 5000000 msgs)[A
+  [##################  ] 87.8% (4388000/estimated 5000000 msgs)[A
+  [##################  ] 88.0% (4399000/estimated 5000000 msgs)[A
+  [##################  ] 88.1% (4407000/estimated 5000000 msgs)[A
+  [##################  ] 88.2% (4411000/estimated 5000000 msgs)[A
+  [##################  ] 88.3% (4414000/estimated 5000000 msgs)[A
+  [##################  ] 88.4% (4418000/estimated 5000000 msgs)[A
+  [##################  ] 88.4% (4419000/estimated 5000000 msgs)[A
+  [##################  ] 88.4% (4421000/estimated 5000000 msgs)[A
+  [##################  ] 88.7% (4435000/estimated 5000000 msgs)[A
+  [##################  ] 88.7% (4436000/estimated 5000000 msgs)[A
+  [##################  ] 88.8% (4442000/estimated 5000000 msgs)[A
+  [##################  ] 88.9% (4444000/estimated 5000000 msgs)[A
+  [##################  ] 89.1% (4455000/estimated 5000000 msgs)[A
+  [##################  ] 89.1% (4456000/estimated 5000000 msgs)[A
+  [##################  ] 89.3% (4465000/estimated 5000000 msgs)[A
+  [##################  ] 89.4% (4471000/estimated 5000000 msgs)[A
+  [##################  ] 89.4% (4472000/estimated 5000000 msgs)[A
+  [##################  ] 89.5% (4474000/estimated 5000000 msgs)[A
+  [##################  ] 89.5% (4476000/estimated 5000000 msgs)[A
+  [##################  ] 89.9% (4493000/estimated 5000000 msgs)[A
+  [##################  ] 89.9% (4496000/estimated 5000000 msgs)[A
+  [##################  ] 90.0% (4499000/estimated 5000000 msgs)[A
+  [##################  ] 90.0% (4500000/estimated 5000000 msgs)[A
+  [##################  ] 90.0% (4502000/estimated 5000000 msgs)[A
+  [##################  ] 90.3% (4517000/estimated 5000000 msgs)[A
+  [##################  ] 90.4% (4520000/estimated 5000000 msgs)[A
+  [##################  ] 90.4% (4522000/estimated 5000000 msgs)[A
+  [##################  ] 90.5% (4523000/estimated 5000000 msgs)[A
+  [##################  ] 90.6% (4528000/estimated 5000000 msgs)[A
+  [##################  ] 90.8% (4538000/estimated 5000000 msgs)[A
+  [##################  ] 90.8% (4540000/estimated 5000000 msgs)[A
+  [##################  ] 91.0% (4548000/estimated 5000000 msgs)[A
+  [##################  ] 91.1% (4554000/estimated 5000000 msgs)[A
+  [##################  ] 91.2% (4558000/estimated 5000000 msgs)[A
+  [##################  ] 91.2% (4560000/estimated 5000000 msgs)[A
+  [##################  ] 91.5% (4573000/estimated 5000000 msgs)[A
+  [##################  ] 91.5% (4576000/estimated 5000000 msgs)[A
+  [##################  ] 91.6% (4578000/estimated 5000000 msgs)[A
+  [##################  ] 91.6% (4579000/estimated 5000000 msgs)[A
+  [##################  ] 91.7% (4585000/estimated 5000000 msgs)[A
+  [##################  ] 91.8% (4588000/estimated 5000000 msgs)[A
+  [##################  ] 91.8% (4591000/estimated 5000000 msgs)[A
+  [##################  ] 92.1% (4606000/estimated 5000000 msgs)[A
+  [##################  ] 92.2% (4611000/estimated 5000000 msgs)[A
+  [##################  ] 92.3% (4613000/estimated 5000000 msgs)[A
+  [##################  ] 92.5% (4624000/estimated 5000000 msgs)[A
+  [################### ] 92.5% (4626000/estimated 5000000 msgs)[A
+  [################### ] 92.5% (4627000/estimated 5000000 msgs)[A
+  [################### ] 92.6% (4631000/estimated 5000000 msgs)[A
+  [################### ] 92.7% (4634000/estimated 5000000 msgs)[A
+  [################### ] 92.7% (4635000/estimated 5000000 msgs)[A
+  [################### ] 92.8% (4642000/estimated 5000000 msgs)[A
+  [################### ] 93.1% (4654000/estimated 5000000 msgs)[A
+  [################### ] 93.1% (4655000/estimated 5000000 msgs)[A
+  [################### ] 93.2% (4659000/estimated 5000000 msgs)[A
+2019-07-02 15:24:15,525: w6   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-6)->http://localhost:8091(default@N/A-6)) done.
+  [################### ] 93.3% (4664000/estimated 5000000 msgs)[A
+  [################### ] 93.4% (4669000/estimated 5000000 msgs)[A
+  [################### ] 93.4% (4672000/estimated 5000000 msgs)[A
+2019-07-02 15:24:16,466: w6   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-6)
+2019-07-02 15:24:16,466: w6   sink   : http://localhost:8091(default@N/A-6)
+2019-07-02 15:24:16,467: w6          :                total |       last |    per sec
+2019-07-02 15:24:16,468: w6    batch :                  500 |        500 |        1.6
+2019-07-02 15:24:16,470: w6    byte  :              5000000 |    5000000 |    15893.4
+2019-07-02 15:24:16,470: w6    msg   :               500000 |     500000 |     1589.3
+2019-07-02 15:24:16,473: w6  node: N/A-6, done; rv: 0
+  [################### ] 93.5% (4676000/estimated 5000000 msgs)[A
+  [################### ] 93.6% (4680000/estimated 5000000 msgs)[A
+2019-07-02 15:24:16,938: w2   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-2)->http://localhost:8091(default@N/A-2)) done.
+2019-07-02 15:24:16,992: w2   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-2)
+2019-07-02 15:24:16,994: w2   sink   : http://localhost:8091(default@N/A-2)
+2019-07-02 15:24:16,994: w2          :                total |       last |    per sec
+2019-07-02 15:24:17,012: w2    batch :                  500 |        500 |        1.6
+2019-07-02 15:24:17,012: w2    byte  :              5000000 |    5000000 |    15859.3
+2019-07-02 15:24:17,012: w2    msg   :               500000 |     500000 |     1585.9
+2019-07-02 15:24:17,013: w2  node: N/A-2, done; rv: 0
+  [################### ] 93.7% (4687000/estimated 5000000 msgs)[A
+  [################### ] 93.8% (4692000/estimated 5000000 msgs)[A
+  [################### ] 94.1% (4704000/estimated 5000000 msgs)[A
+  [################### ] 94.1% (4707000/estimated 5000000 msgs)[A
+  [################### ] 94.2% (4711000/estimated 5000000 msgs)[A
+  [################### ] 94.4% (4721000/estimated 5000000 msgs)[A
+  [################### ] 94.4% (4722000/estimated 5000000 msgs)[A
+  [################### ] 94.5% (4723000/estimated 5000000 msgs)[A
+  [################### ] 94.5% (4725000/estimated 5000000 msgs)[A
+  [################### ] 94.6% (4731000/estimated 5000000 msgs)[A
+  [################### ] 94.7% (4733000/estimated 5000000 msgs)[A
+  [################### ] 94.7% (4734000/estimated 5000000 msgs)[A
+2019-07-02 15:24:20,773: w7   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-7)->http://localhost:8091(default@N/A-7)) done.
+2019-07-02 15:24:20,840: w7   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-7)
+2019-07-02 15:24:20,840: w7   sink   : http://localhost:8091(default@N/A-7)
+2019-07-02 15:24:20,845: w7          :                total |       last |    per sec
+2019-07-02 15:24:20,884: w7    batch :                  500 |        500 |        1.6
+2019-07-02 15:24:20,884: w7    byte  :              5000000 |    5000000 |    15672.9
+2019-07-02 15:24:20,884: w7    msg   :               500000 |     500000 |     1567.3
+2019-07-02 15:24:20,888: w7  node: N/A-7, done; rv: 0
+  [################### ] 94.9% (4744000/estimated 5000000 msgs)[A
+  [################### ] 95.3% (4765000/estimated 5000000 msgs)[A
+  [################### ] 95.3% (4766000/estimated 5000000 msgs)[A
+  [################### ] 95.4% (4768000/estimated 5000000 msgs)[A
+  [################### ] 95.4% (4769000/estimated 5000000 msgs)[A
+  [################### ] 95.4% (4770000/estimated 5000000 msgs)[A
+  [################### ] 95.4% (4771000/estimated 5000000 msgs)[A
+  [################### ] 95.4% (4772000/estimated 5000000 msgs)[A
+  [################### ] 95.9% (4794000/estimated 5000000 msgs)[A
+  [################### ] 96.0% (4799000/estimated 5000000 msgs)[A
+  [################### ] 96.0% (4801000/estimated 5000000 msgs)[A
+  [################### ] 96.1% (4803000/estimated 5000000 msgs)[A
+2019-07-02 15:24:25,731: w4   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-4)->http://localhost:8091(default@N/A-4)) done.
+2019-07-02 15:24:25,739: w4   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-4)
+2019-07-02 15:24:25,740: w4   sink   : http://localhost:8091(default@N/A-4)
+2019-07-02 15:24:25,740: w4          :                total |       last |    per sec
+2019-07-02 15:24:25,740: w4    batch :                  500 |        500 |        1.5
+2019-07-02 15:24:25,740: w4    byte  :              5000000 |    5000000 |    15432.5
+2019-07-02 15:24:25,740: w4    msg   :               500000 |     500000 |     1543.2
+2019-07-02 15:24:25,740: w4  node: N/A-4, done; rv: 0
+  [################### ] 96.1% (4807000/estimated 5000000 msgs)[A
+  [################### ] 96.2% (4809000/estimated 5000000 msgs)[A
+  [################### ] 96.2% (4812000/estimated 5000000 msgs)[A
+  [################### ] 96.5% (4827000/estimated 5000000 msgs)[A
+  [################### ] 96.7% (4834000/estimated 5000000 msgs)[A
+  [################### ] 96.7% (4835000/estimated 5000000 msgs)[A
+  [################### ] 96.7% (4837000/estimated 5000000 msgs)[A
+  [################### ] 96.8% (4839000/estimated 5000000 msgs)[A
+  [################### ] 96.8% (4841000/estimated 5000000 msgs)[A
+  [################### ] 97.2% (4859000/estimated 5000000 msgs)[A
+  [################### ] 97.2% (4861000/estimated 5000000 msgs)[A
+  [################### ] 97.3% (4864000/estimated 5000000 msgs)[A
+  [################### ] 97.3% (4866000/estimated 5000000 msgs)[A
+  [################### ] 97.4% (4871000/estimated 5000000 msgs)[A
+  [####################] 97.5% (4876000/estimated 5000000 msgs)[A
+  [####################] 97.6% (4880000/estimated 5000000 msgs)[A
+  [####################] 97.8% (4891000/estimated 5000000 msgs)[A
+  [####################] 97.9% (4893000/estimated 5000000 msgs)[A
+2019-07-02 15:24:33,556: w5   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-5)->http://localhost:8091(default@N/A-5)) done.
+2019-07-02 15:24:33,875: w5   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-5)
+2019-07-02 15:24:33,875: w5   sink   : http://localhost:8091(default@N/A-5)
+2019-07-02 15:24:33,875: w5          :                total |       last |    per sec
+2019-07-02 15:24:33,875: w5    batch :                  500 |        500 |        1.5
+2019-07-02 15:24:33,875: w5    byte  :              5000000 |    5000000 |    15054.6
+2019-07-02 15:24:33,876: w5    msg   :               500000 |     500000 |     1505.5
+2019-07-02 15:24:33,876: w5  node: N/A-5, done; rv: 0
+  [####################] 98.0% (4900000/estimated 5000000 msgs)[A
+  [####################] 98.0% (4902000/estimated 5000000 msgs)[A
+  [####################] 98.1% (4905000/estimated 5000000 msgs)[A
+  [####################] 98.2% (4909000/estimated 5000000 msgs)[A
+  [####################] 98.3% (4915000/estimated 5000000 msgs)[A
+2019-07-02 15:24:35,843: w0   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-0)->http://localhost:8091(default@N/A-0)) done.
+2019-07-02 15:24:35,844: w0   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-0)
+2019-07-02 15:24:35,844: w0   sink   : http://localhost:8091(default@N/A-0)
+2019-07-02 15:24:35,844: w0          :                total |       last |    per sec
+2019-07-02 15:24:35,844: w0    batch :                  500 |        500 |        1.5
+2019-07-02 15:24:35,844: w0    byte  :              5000000 |    5000000 |    14964.5
+2019-07-02 15:24:35,844: w0    msg   :               500000 |     500000 |     1496.5
+2019-07-02 15:24:35,844: w0  node: N/A-0, done; rv: 0
+  [####################] 98.5% (4925000/estimated 5000000 msgs)[A
+  [####################] 98.6% (4928000/estimated 5000000 msgs)[A
+2019-07-02 15:24:36,569: w8   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-8)->http://localhost:8091(default@N/A-8)) done.
+2019-07-02 15:24:36,569: w8   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-8)
+2019-07-02 15:24:36,569: w8   sink   : http://localhost:8091(default@N/A-8)
+2019-07-02 15:24:36,569: w8          :                total |       last |    per sec
+2019-07-02 15:24:36,569: w8    batch :                  500 |        500 |        1.5
+2019-07-02 15:24:36,571: w8    byte  :              5000000 |    5000000 |    14939.3
+2019-07-02 15:24:36,571: w8    msg   :               500000 |     500000 |     1493.9
+2019-07-02 15:24:36,572: w8  node: N/A-8, done; rv: 0
+  [####################] 98.6% (4930000/estimated 5000000 msgs)[A
+  [####################] 98.6% (4932000/estimated 5000000 msgs)[A
+  [####################] 98.9% (4943000/estimated 5000000 msgs)[A
+  [####################] 98.9% (4945000/estimated 5000000 msgs)[A
+  [####################] 98.9% (4947000/estimated 5000000 msgs)[A
+  [####################] 99.2% (4959000/estimated 5000000 msgs)[A
+  [####################] 99.2% (4960000/estimated 5000000 msgs)[A
+  [####################] 99.2% (4962000/estimated 5000000 msgs)[A
+  [####################] 99.5% (4973000/estimated 5000000 msgs)[A
+  [####################] 99.5% (4975000/estimated 5000000 msgs)[A
+  [####################] 99.5% (4977000/estimated 5000000 msgs)[A
+2019-07-02 15:24:42,415: w1   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-1)->http://localhost:8091(default@N/A-1)) done.
+2019-07-02 15:24:42,415: w1   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-1)
+2019-07-02 15:24:42,416: w1   sink   : http://localhost:8091(default@N/A-1)
+2019-07-02 15:24:42,416: w1          :                total |       last |    per sec
+2019-07-02 15:24:42,416: w1    batch :                  500 |        500 |        1.5
+2019-07-02 15:24:42,416: w1    byte  :              5000000 |    5000000 |    14676.0
+2019-07-02 15:24:42,416: w1    msg   :               500000 |     500000 |     1467.6
+2019-07-02 15:24:42,416: w1  node: N/A-1, done; rv: 0
+  [####################] 99.7% (4986000/estimated 5000000 msgs)[A
+  [####################] 99.7% (4987000/estimated 5000000 msgs)[A
+2019-07-02 15:24:43,088: w3   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-3)->http://localhost:8091(default@N/A-3)) done.
+2019-07-02 15:24:43,089: w3   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-3)
+2019-07-02 15:24:43,089: w3   sink   : http://localhost:8091(default@N/A-3)
+2019-07-02 15:24:43,089: w3          :                total |       last |    per sec
+2019-07-02 15:24:43,089: w3    batch :                  500 |        500 |        1.5
+2019-07-02 15:24:43,089: w3    byte  :              5000000 |    5000000 |    14648.3
+2019-07-02 15:24:43,089: w3    msg   :               500000 |     500000 |     1464.8
+2019-07-02 15:24:43,089: w3  node: N/A-3, done; rv: 0
+  [####################] 99.9% (4993000/estimated 5000000 msgs)[A
+  [####################] 100.0% (4998000/estimated 5000000 msgs)[A
+2019-07-02 15:24:46,128: w9   pump (gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-9)->http://localhost:8091(default@N/A-9)) done.
+2019-07-02 15:24:46,129: w9   source : gen:json=0,max-items=500000,low-compression=False,prefix=pymc,ratio-sets=1.0,exit-after-creates=1,min-value-size=10(default@N/A-9)
+2019-07-02 15:24:46,130: w9   sink   : http://localhost:8091(default@N/A-9)
+2019-07-02 15:24:46,130: w9          :                total |       last |    per sec
+2019-07-02 15:24:46,130: w9    batch :                  500 |        500 |        1.5
+2019-07-02 15:24:46,131: w9    byte  :              5000000 |    5000000 |    14524.5
+2019-07-02 15:24:46,131: w9    msg   :               500000 |     500000 |     1452.4
+2019-07-02 15:24:46,131: w9  node: N/A-9, done; rv: 0
+  [####################] 100.0% (4999000/estimated 5000000 msgs)[A
+
+bucket: default, msgs transferred...
+       :                total |       last |    per sec
+ batch :                 5000 |       5000 |       14.5
+ byte  :             50000000 |   50000000 |   144759.6
+ msg   :              5000000 |    5000000 |    14476.0
+done
