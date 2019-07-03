@@ -19,7 +19,8 @@ sudo docker exec -it db bash
 Onde `[usuario]` e `[senha]` devem ser substituídos por usuário e senha administrativa do Couchbase e `[razao]` pela razão escrita/leitura desejada. Observe que é o contrário de leitura/escrita. 
 
 ### YCSB
-Primeiro é necessário criar um *bucket* chamado `ycsb-workload-a`.
+Para os testes do tipo *workload*, é necessário criar um *bucket* e um usuário chamado `ycsb-workload-a`, com senha `workload`.
+Para os testes do tipo *query*, é necessário importar o *bucket* `travel-sample` e criar um usuário de mesmo nome, com senha `workload`.
 Basta clonar este repositório (`git clone https://github.com/gabrielrodriguesrocha/PMD-Benchmark`) e executar:
 
 ```
